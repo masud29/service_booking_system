@@ -156,7 +156,8 @@ Feel free to reach out if you have any questions about this project or want to d
 
 - **GitHub**: [@masud29](https://github.com/masud29)
 - **Email**: masudrana06013@gmail.com
+- **Phone**: 01737191929
 
 ---
 
-**Note**: This project is part of my portfolio and demonstrates my full-stack development capabilities. I'm always learning and improving! 🚀 
+**Note**: This project is part of my portfolio and demonstrates my full-stack development capabilities. I'm always learning and improving! 🚀
