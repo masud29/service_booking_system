@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Api;
 
 use App\Http\Controllers\Controller;
+use App\Http\Requests\ServiceRequest;
 use App\Models\Service;
 use Illuminate\Http\Request;
 
@@ -17,14 +18,8 @@ class ServiceController extends Controller
         ]);
     }
 
-    public function store(Request $request)
+    public function store(ServiceRequest $request)
     {
-        $request->validate([
-            'name' => 'required|string|max:255',
-            'description' => 'required|string',
-            'price' => 'required|numeric|min:0',
-            'status' => 'boolean',
-        ]);
 
         $service = Service::create($request->all());
 
@@ -43,14 +38,8 @@ class ServiceController extends Controller
         ]);
     }
 
-    public function update(Request $request, string $id)
+    public function update(ServiceRequest $request, string $id)
     {
-        $request->validate([
-            'name' => 'sometimes|required|string|max:255',
-            'description' => 'sometimes|required|string',
-            'price' => 'sometimes|required|numeric|min:0',
-            'status' => 'sometimes|boolean',
-        ]);
 
         $service = Service::findOrFail($id);
         $service->update($request->all());

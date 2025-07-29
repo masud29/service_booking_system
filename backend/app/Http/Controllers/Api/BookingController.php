@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Api;
 
 use App\Http\Controllers\Controller;
+use App\Http\Requests\BookingRequest;
 use App\Models\Booking;
 use App\Models\Service;
 use Illuminate\Http\Request;
@@ -19,12 +20,8 @@ class BookingController extends Controller
         ]);
     }
 
-    public function store(Request $request)
+    public function store(BookingRequest $request)
     {
-        $request->validate([
-            'service_id' => 'required|exists:services,id',
-            'booking_date' => 'required|date|after:today',
-        ]);
 
         $service = Service::where('id', $request->service_id)
             ->where('status', true)
