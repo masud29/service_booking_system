@@ -6,6 +6,36 @@ Hey there! 👋 This is my service booking application that I built for my portf
 
 This is a complete service booking system where customers can book various services (like plumbing, electrical, cleaning) and admins can manage everything. I focused on building a clean, secure, and user-friendly application.
 
+## 📸 Screenshots
+
+### 🔐 Authentication Pages
+![Login Page](screenshots/login.png)
+*Clean and modern login interface with form validation*
+
+![Register Page](screenshots/register.png)
+*User registration with password confirmation*
+
+### 🏠 Main Application
+![Services Page](screenshots/services.png)
+*Available services with booking functionality*
+
+![Bookings Dashboard](screenshots/bookings.png)
+*User's booking history and management*
+
+### 👨‍💼 Admin Panel
+![Admin Dashboard](screenshots/admin-dashboard.png)
+*Admin overview of all bookings and services*
+
+![Service Management](screenshots/service-management.png)
+*Admin can create, edit, and delete services*
+
+![Edit Service](screenshots/edit.png)
+*Admin editing service details with form validation*
+
+### 📱 Responsive Design
+![Mobile View](screenshots/mobile-view.png)
+*Fully responsive design works on all devices*
+
 ## 🛠️ Tech Stack
 
 ### Backend
