@@ -29,7 +29,8 @@ This document outlines the development workflow for the Service Booking App.
    php artisan migrate
    php artisan serve
    ```
-
+### DATABASE
+download sql file and import it into phpmyadmin.
 3. **Frontend Setup (React)**
    ```bash
    cd frontend
@@ -97,27 +98,6 @@ fix: resolve booking date validation issue
 docs: update API documentation
 ```
 
-### 3. Code Review Process
-
-1. **Self-review before PR**
-   - Check code quality
-   - Ensure tests pass
-   - Verify functionality
-
-2. **Pull Request Review**
-   - Add detailed description
-   - Include screenshots if UI changes
-   - Link related issues
-
-3. **Review Checklist**
-   - [ ] Code follows project conventions
-   - [ ] Tests are included
-   - [ ] Documentation is updated
-   - [ ] No security vulnerabilities
-   - [ ] Performance considerations
-
-## 🛠️ Development Guidelines
-
 ### Backend (Laravel)
 
 1. **API Design**
@@ -148,7 +128,6 @@ docs: update API documentation
    - Implement proper error handling
 
 3. **Styling**
-   - Use Tailwind CSS for styling
    - Maintain consistent design system
    - Ensure responsive design
 
